@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="subbed.css">
+  <title>Subscription complete</title>
+
+</head>
+
+<body>
+
+
+  <main class="card">
+    <div class="flex-group">
+      <img src="./assets/images/icon-success.svg" alt="check mark as visual check of subscription being complete">
+
+      <h1>Thanks for subscribing!</h1>
+      <p>A confirmation email has been sent to <span id="emailDisplay"></span>.
+        Please open it and click the button inside to confirm your subscription.</p>
+    </div>
+    <button><a href="index.html">Dismiss message</a></button>
+
+
+  </main>
+  <script>
+    /*let userEmail = localStorage.getItem("userEmail");*/
+
+    const greetingValue = localStorage.getItem('greeting');
+    console.log(greetingValue);
+    const email = localStorage.getItem('userEmail');
+    console.log(email);
+    document.getElementById("emailDisplay").innerText = email;
+  </script>
+</body>
+
+
+</html>

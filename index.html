@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <title>Newsletter sign-up form with success message</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <main>
+    <div class="card | grid">
+      <section class="section | ">
+        <h1>Stay updated!</h1>
+        <p class="mb-24">Join 60,000+ product managers receiving monthly updates on:</p>
+        <ol>
+          <li class="flex">Product discovery and building what matters</li>
+          <li class="flex">Measuring to ensure updates are a success</li>
+          <li class="flex">And much more!</li>
+        </ol>
+        <div class="email-title | flex jc-sb">
+          <p>Email address</p>
+          <p class="error" id="error">Valid email required</p>
+        </div>
+        <form action="subbed.html">
+          <input type="email" name="email" id="email" placeholder="email@company.com" required>
+          <input type="submit" onclick="ValidateEmail()" value="Subscribe to monthly newsletter">
+        </form>
+      </section>
+      <picture>
+        <source srcset="./assets/images/illustration-sign-up-desktop.svg" media="(min-width:60rem)">
+        <img src="./assets/images/illustration-sign-up-mobile.svg" alt="">
+      </picture>
+    </div>
+  </main>
+  <script src="script.js">
+
+  </script>
+</body>
+
+</html>
